@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Poppins:wght@600&family=Work+Sans:wght@600&display=swap');
+body{
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   min-height: 5000px;
+   .mainflow{
+      display: flex;
+      flex-direction: column;
+      max-width: 1440px;
+      width: 100%;
+      min-height: 6478px;
+      background-color:#E5E5E5;
+      .header-wrapper{
+         display: flex;
+         width: 100%;
+         min-height: 846px;
+         margin-top: 15px;
+         justify-content: center;
+         .header{
+            display: flex;
+            width: 1240px;
+            min-height: 846px;
+            .header-menu-container{
+               display: flex;
+               width: 100%;
+               height: 58px;
+               justify-content: space-around;
+               align-items: center;
+               .header-menu{
+                  display: flex;
+                  width: 277px;
+                  height: 19px;
+                  justify-content: space-around;
+                  font-family: 'Poppins';
+                  font-size: 18px;
+                  font-weight: 400;
+                  .home:hover, .reviews:hover, .free-trial:hover{
+                     cursor: pointer;
+                  }
+               }
+               .header-login-block{
+                  display: flex;
+                  width: 205px;
+                  height: 52px;
+                  align-items: center;
+                  justify-content: space-between;
+                  .header-login{
+                     display: flex;
+                     width: 120px;
+                     height: 52px;
+                     background-color: #64A0C2;
+                     border-radius: 10px;
+                     border: 1px solid transparent;
+                     justify-content: center;
+                     align-items: center;
+                     font-family: 'Poppins';
+                     font-size: 14px;
+                     font-weight: 700;
+                     color: #FFFFFF;
+                     &:hover{
+                        cursor: pointer;
+                     }
+                  }
+                  .language-container{
+                     display: flex;
+                     justify-content: space-between;
+                     width: 58px;
+                     height: 25px;
+                     img:hover{
+                        cursor: pointer;
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}
