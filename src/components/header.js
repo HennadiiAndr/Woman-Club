@@ -9,6 +9,9 @@ import Tree from '../tree.jpg'
 import '../styles.scss'
 
 function Header(){
+   const onClickHandler=()=>{
+      window.scroll(0,4200)
+   }
    return(
       <div className='header-wrapper'>
          <div className='header'>
@@ -40,7 +43,10 @@ function Header(){
                         (face, body, mind and soul), in a beautiful<br/> 
                         community of like-minded women.
                      </div>
-                     <button className='try-us'>Try us free for 7 days</button>
+                     <button 
+                        className='try-us'
+                        onClick={onClickHandler}
+                     >Try us free for 7 days</button>
                   </div>
                </div>
                <div className='image-block'>

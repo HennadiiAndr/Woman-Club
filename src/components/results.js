@@ -1,9 +1,53 @@
 import React from 'react'
 import Flowers from '../flowers.png'
+import { useDispatch } from 'react-redux'
+import { SET_RANGE } from '../actions/action_types'
+import { SET_FIRST_RANGE } from '../actions/action_types'
+import { SET_SECOND_RANGE } from '../actions/action_types'
+import { SET_THIRD_RANGE } from '../actions/action_types'
+import { SET_FOURTH_RANGE } from '../actions/action_types'
+import { SET_FIFTH_RANGE } from '../actions/action_types'
 
 import '../styles.scss'
 
 function Results(){
+   const dispatch = useDispatch()
+   const setRange = (range) =>{
+      dispatch({
+         type: SET_RANGE,
+         payload: range
+      })
+   }
+   const rangeOne = () =>{
+      dispatch({
+         type: SET_FIRST_RANGE,
+         payload: '20-25'
+      })
+   }
+   const rangeTwo = () =>{
+      dispatch({
+         type: SET_SECOND_RANGE,
+         payload: '26-35'
+      })
+   }
+   const rangeThree = () =>{
+      dispatch({
+         type: SET_THIRD_RANGE,
+         payload: '36-45'
+      })
+   }
+   const rangeFour = () =>{
+      dispatch({
+         type: SET_FOURTH_RANGE,
+         payload: '46-55'
+      })
+   }
+   const rangeFive = () =>{
+      dispatch({
+         type: SET_FIFTH_RANGE,
+         payload: 'over 55'
+      })
+   }
    return(
       <div className='results-block'>
          <div className='results'>
@@ -13,11 +57,11 @@ function Results(){
                   results can you expect?
                </div>
                <div className='age-select-block'>
-                  <div className='age-select'>Are you 20-25 years old?</div>
-                  <div className='age-select'>Are you 26-35 years old?</div>
-                  <div className='age-select'>Are you 36-45 years old?</div>
-                  <div className='age-select'>Are you 46-55 years old?</div>
-                  <div className='age-select'>Are you over 55?</div>
+                  <div className='age-select' onClick={() => setRange('20-25')}>Are you 20-25 years old?</div>
+                  <div className='age-select' onClick={() => setRange('26-35')}>Are you 26-35 years old?</div>
+                  <div className='age-select' onClick={() => setRange('36-45')}>Are you 36-45 years old?</div>
+                  <div className='age-select' onClick={() => setRange('46-55')}>Are you 46-55 years old?</div>
+                  <div className='age-select' onClick={() => setRange('over 55')}>Are you over 55?</div>
                </div>
             </div>
             <div className='motivation-block'>
