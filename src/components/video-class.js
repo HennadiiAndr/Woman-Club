@@ -14,6 +14,9 @@ function VideoClass(){
          payload: email
       })
    }
+   const onClickHandler = () =>{
+      window.scroll(0,4600)
+   }
    return(
       <div className='video-class-container'>
          <div className='video-class-block'>
@@ -25,7 +28,10 @@ function VideoClass(){
                   onChange={(e)=>{handleInput(e.target.value)}}
                   value={email}
                ></input>
-               <button className='get-free'>Get FREE access</button>
+               <button 
+                  className='get-free'
+                  onClick={onClickHandler}
+               >Get FREE access</button>
                <div className='blue-block-up'></div>
                <div className='blue-block-down'></div>
             </div>
