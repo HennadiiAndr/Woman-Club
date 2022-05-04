@@ -2,18 +2,40 @@ import React from 'react'
 import Flowers from '../flowers.png'
 import { useDispatch } from 'react-redux'
 import { SET_RANGE } from '../actions/action_types'
+import { SET_VISIBILITY } from '../actions/action_types'
 import { useSelector } from 'react-redux'
+
 
 import '../styles.scss'
 
+
+
 function Results(){
+   const data = {
+      email: '',
+      age: ''
+   }
    const range = useSelector((state) => state.range)
+   const email = useSelector((state) => state.email)
    const dispatch = useDispatch()
    const setRange = (range) =>{
       dispatch({
          type: SET_RANGE,
          payload: range
       })
+      setData(range, email);
+      setVisibility('true')
+   }
+   const setVisibility = (visibility) =>{
+      dispatch({
+         type: SET_VISIBILITY,
+         payload: visibility
+      })
+   }
+   const setData = (range, email) =>{
+      data.age = range;
+      data.email = email
+      console.log(data)
    }
    return(
       <div className='results-block'>
@@ -26,23 +48,23 @@ function Results(){
                <div className='age-select-block'>
                   <div 
                      className={'age-select' + (range === '20-25' ? ' selected' : '')}
-                     onClick={() => setRange('20-25')}>Are you 20-25 years old?
+                     onClick={() => {setRange('20-25')}}>Are you 20-25 years old?
                   </div>
                   <div 
                      className={'age-select' + (range === '26-35' ? ' selected' : '')}
-                     onClick={() => setRange('26-35')}>Are you 26-35 years old?
+                     onClick={() => {setRange('26-35')}}>Are you 26-35 years old?
                   </div>
                   <div 
                      className={'age-select' + (range === '36-45' ? ' selected' : '')}
-                     onClick={() => setRange('36-45')}>Are you 36-45 years old?
+                     onClick={() => {setRange('36-45')}}>Are you 36-45 years old?
                   </div>
                   <div 
                      className={'age-select' + (range === '46-55' ? ' selected' : '')}
-                     onClick={() => setRange('46-55')}>Are you 46-55 years old?
+                     onClick={() => {setRange('46-55')}}>Are you 46-55 years old?
                   </div>
                   <div 
                      className={'age-select' + (range === 'over 55' ? ' selected' : '')} 
-                     onClick={() => setRange('over 55')}>Are you over 55?
+                     onClick={() => {setRange('over 55')}}>Are you over 55?
                   </div>
                </div>
             </div>

@@ -12,10 +12,51 @@ body{
    .mainflow{
       display: flex;
       flex-direction: column;
+      position: relative;
       max-width: 1440px;
       width: 100%;
       min-height: 6478px;
       background-color:#FFFFFF;
+      .alert-container{
+         display: none;
+         width: 350px;
+         height: 150px;
+         position: fixed;
+         left: 500px;
+         top: 250px;
+         z-index: 8;
+         border: 1px solid transparent;
+         border-radius: 10px;
+         justify-content: center;
+         align-items: center;
+         background-color: #64A0C2;
+         flex-direction: column;
+         .alert-container-text{
+            display: flex;
+            font-size: 16px;
+            color:#FFFFFF;
+            font-weight: 700;
+         }
+         .alert-button{
+            display: flex;
+            width: 100px;
+            height: 30px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 16px;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            border: 1px solid transparent;
+            background-color: #2A3342;
+            &:hover{
+               cursor: pointer;
+            }
+         }
+      }
+      .alert-showed{
+            display: flex;
+         }
       .header-wrapper{
          display: flex;
          width: 100%;

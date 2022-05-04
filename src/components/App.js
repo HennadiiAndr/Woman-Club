@@ -8,10 +8,12 @@ import Achievements from './achievements'
 import VideoClass from './video-class'
 import Results from './results'
 import MoreAbout from './more-about'
+import Alert from './alert'
 
 function App(){
    return <div className='main'>
       <div className='mainflow'>
+         <Alert/>
          <Header/>
          <WhatWeDo/>
          <Achievements/>

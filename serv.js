@@ -2,13 +2,18 @@ const http = require('http');
 const path = require('path');
 const fs = require('fs');
 
+const hostname = 'localhost';
+const port = 4000;
+
 http.createServer((req,res) =>{
    if(req.url === '/'){
       sendRes ('index.html', 'text/html', res)
    } else {
       sendRes (req.url, getContentType(req.url), res);
    }
-}).listen(process.env.PORT || 5000)
+}).listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+})
 
 function sendRes(url, contentType, res){
     let file = path.join(__dirname + '/public/', url);
@@ -40,3 +45,18 @@ function getContentType(url){
         return 'application/octet - stream';
     }
 };
+
+/*const http = require('http');
+
+const hostname = '127.0.0.1';
+const port = 4000;
+
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});*/
