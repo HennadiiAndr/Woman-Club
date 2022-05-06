@@ -1,41 +1,43 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
-import { connect } from 'react-redux'
 import { SET_EMAIL } from '../actions/action_types'
-import { setStatus } from '../actions'
+import { SET_MESSAGE } from '../actions/action_types'
+import { emailValidation } from '../utils'
 
 
 import '../styles.scss'
 
-function VideoClass(props){
+function VideoClass(){
    
    const email = useSelector((state)=>state.email)
-   const status = useSelector((state) => state.status)
    const dispatch = useDispatch()
    const handleInput = (email) => {
       dispatch({
          type: SET_EMAIL,
          payload: email
       })
-      emailValidation(email)
+      emailValidation(email, setMessage)
+   }
+   const setMessage = (message) =>{
+      dispatch({
+         type: SET_MESSAGE,
+         payload: message
+      })
    }
    const onClickHandler = () =>{
       window.scroll(0,4600)
    }
-   const emailValidation = (email) =>{
+   /*const emailValidation = (email) =>{
       const regEx= /[a-zA-Z0-9._%+-]+@[a-z0-9·-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g
       if(regEx.test(email)){
-         props.setStatus('we sent you all materials')
-         console.log(status)
+         setMessage('we sent you all materials')
       }else if(!regEx.test(email)&& email !==''){
-         props.setStatus('enter valid email')
-         console.log(status)
+         setMessage('enter valid email')
       }else{
-         props.setStatus('enter email')
-         console.log(status)
+         setMessage('enter email')
       }
-   }
+   }*/
    return(
       <div className='video-class-container'>
          <div className='video-class-block'>
@@ -59,4 +61,4 @@ function VideoClass(props){
    )
 }
 
-export default connect(null,{setStatus})(VideoClass)
+export default VideoClass

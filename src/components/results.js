@@ -5,10 +5,7 @@ import { SET_RANGE } from '../actions/action_types'
 import { SET_VISIBILITY } from '../actions/action_types'
 import { useSelector } from 'react-redux'
 
-
 import '../styles.scss'
-
-
 
 function Results(){
    const data = {

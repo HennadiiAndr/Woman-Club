@@ -16,7 +16,7 @@ http.createServer((req,res) =>{
 })
 
 function sendRes(url, contentType, res){
-    let file = path.join(__dirname + '/public/', url);
+    let file = path.join(__dirname + '/build/', url);
     fs.readFile(file, (err, content) => {
         if(err){
             res.writeHead(404);
