@@ -4,6 +4,7 @@ import { useDispatch } from 'react-redux';
 import { SET_VISIBILITY } from '../actions/action_types';
 import { SET_EMAIL } from '../actions/action_types';
 import { SET_RANGE } from '../actions/action_types';
+import axios  from 'axios';
 
 import '../styles.scss'
 
@@ -11,6 +12,7 @@ function Alert(){
    let className='alert-container';
    const visibility = useSelector((state) => state.visibility);
    const message = useSelector((state) => state.message);
+   const data = useSelector((state) => state.data);
    const dispatch = useDispatch()
    if(visibility === 'true'){
       className = 'alert-container alert-showed'
@@ -35,12 +37,19 @@ function Alert(){
          payload: range
       })
    }
+
+   
+   
+   const postData = () => {
+      axios.post('http://localhost:4000/posts', data).then((res) => {console.log(res.data)});
+      console.log(data);
+   }
    return(
       <div className={className}>
          <div className ='alert-container-text'>{message}</div>
          <button 
             className='alert-button'
-            onClick={() => {closeAlert('false'); resetEmail(''); resetRange('')}}
+            onClick={() => {closeAlert('false'); resetEmail(''); resetRange(''); postData()}}
          >ok</button>
       </div>
    )

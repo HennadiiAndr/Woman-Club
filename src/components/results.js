@@ -1,38 +1,30 @@
 import React from 'react'
 import Flowers from '../flowers.png'
 import { useDispatch } from 'react-redux'
+import { connect } from 'react-redux'
 import { SET_RANGE } from '../actions/action_types'
 import { SET_VISIBILITY } from '../actions/action_types'
 import { useSelector } from 'react-redux'
+import { setData } from '../actions'
 
 import '../styles.scss'
 
-function Results(){
-   const data = {
-      email: '',
-      age: ''
-   }
+function Results(props){
    const range = useSelector((state) => state.range)
-   const email = useSelector((state) => state.email)
    const dispatch = useDispatch()
    const setRange = (range) =>{
       dispatch({
          type: SET_RANGE,
          payload: range
       })
-      setData(range, email);
-      setVisibility('true')
+      setVisibility('true');
+      props.setData()
    }
    const setVisibility = (visibility) =>{
       dispatch({
          type: SET_VISIBILITY,
          payload: visibility
       })
-   }
-   const setData = (range, email) =>{
-      data.age = range;
-      data.email = email
-      console.log(data)
    }
    return(
       <div className='results-block'>
@@ -104,4 +96,4 @@ function Results(){
    )
 }
 
-export default Results
+export default connect(null, {setData})(Results)

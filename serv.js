@@ -1,6 +1,11 @@
 const http = require('http');
 const path = require('path');
 const fs = require('fs');
+const sgMail = require("@sendgrid/mail");
+
+sgMail.setApiKey('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');
+
+
 
 const hostname = 'localhost';
 const port = 4000;
@@ -8,9 +13,28 @@ const port = 4000;
 http.createServer((req,res) =>{
    if(req.url === '/'){
       sendRes ('index.html', 'text/html', res)
+   } else if (req.url === '/posts'){
+        let body = '';
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        req.on('data', chunk =>{
+            body += chunk.toString();
+        })
+        req.on('end', ()=> {
+            const msg = {
+                to: 'woldemarnow@gmail.com',
+                from: 'woldemarnow@gmail.com',
+                subject: 'Sending with SendGrid is Fun',
+                text: body,
+                html: body,
+            };
+            console.log(body);
+            res.end('ok');
+            sgMail.send(msg);
+        });
    } else {
-      sendRes (req.url, getContentType(req.url), res);
-   }
+        sendRes (req.url, getContentType(req.url), res);
+    }
+   
 }).listen(port, hostname, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 })
