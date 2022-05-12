@@ -35,7 +35,7 @@ http.createServer((req,res) =>{
         sendRes (req.url, getContentType(req.url), res);
     }
    
-}).listen(port, hostname, () => {
+}).listen(port, () => {
   console.log(`Server running at http://${hostname}:${port}/`);
 })
 
