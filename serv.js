@@ -13,12 +13,12 @@ const port = process.env.PORT || 4000;
 http.createServer((req,res) =>{
    if(req.url === '/'){
       sendRes ('index.html', 'text/html', res)
-   } else if (req.url === '/posts'){
+   } else if (req.url === '/send-email'){
         let body = '';
         res.writeHead(200, {'Content-Type': 'text/html'});
         req.on('data', chunk =>{
             body += chunk.toString();
-        })
+        });
         req.on('end', ()=> {
             const msg = {
                 to: 'topor0630650917@gmail.com',

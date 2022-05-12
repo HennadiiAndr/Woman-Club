@@ -41,7 +41,7 @@ function Alert(){
    
    
    const postData = () => {
-      axios.post('http://localhost:4000/posts', data).then((res) => {console.log(res.data)});
+      axios.post('/send-email', data).then((res) => {console.log(res.data)});
       console.log(data);
    }
    return(
