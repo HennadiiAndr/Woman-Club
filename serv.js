@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const sgMail = require("@sendgrid/mail");
 
-sgMail.setApiKey('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');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 
 
@@ -21,8 +21,8 @@ http.createServer((req,res) =>{
         })
         req.on('end', ()=> {
             const msg = {
-                to: 'woldemarnow@gmail.com',
-                from: 'woldemarnow@gmail.com',
+                to: 'topor0630650917@gmail.com',
+                from: 'topor0630650917@gmail.com',
                 subject: 'Sending with SendGrid is Fun',
                 text: body,
                 html: body,
