@@ -8,7 +8,7 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 
 const hostname = 'localhost';
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 http.createServer((req,res) =>{
    if(req.url === '/'){
