@@ -6,8 +6,7 @@ import App from './components/App.js'
 import thunk from 'redux-thunk';
 import allReducers from './reducers';
 
-const enhancers = [applyMiddleware(thunk),
-window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()]
+const enhancers = [applyMiddleware(thunk)]
 
 const store = createStore(
    allReducers,
