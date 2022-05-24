@@ -1,10 +1,8 @@
 import React from 'react'
-import Logo from '../Logo.png'
-import Russian from '../russia.png'
-import English from '../english.png'
-import HeaderImage from '../headerimage.png'
-import BigStar from '../smoothcorner.png'
-import Tree from '../tree.jpg'
+import Logo from '../assets/Logo.png'
+import HeaderImage from '../assets/headerimage.png'
+import BigStar from '../assets/smoothcorner.png'
+import Tree from '../assets/tree.jpg'
 
 import '../styles.scss'
 
@@ -18,30 +16,20 @@ function Header(){
             <div className='header-menu-container'>
                <img src={Logo} alt='img'></img>
                <div className='header-menu'>
-                  <div className='home'>Home</div>
-                  <div className='reviews'>Reviews</div>
-                  <div className='free-trial'>Free Trial</div>
+               
                </div>
                <div className='header-login-block'>
-                  <button className='header-login'>LOGIN</button>
-                  <div className='language-container'>
-                     <div className='russian'>
-                        <img src={Russian} alt='img'></img>
-                     </div>
-                     <div className='english'>
-                        <img src={English} alt='img'></img>
-                     </div>
-                  </div>
+                  
                </div>
             </div>
             <div className='look-feel-container'>
                <div className='content-block'>
                   <div className='content-wrapper'>
-                     <div className='content-text-up'>Feel at home and become your New<br/> You in a matter of weeks</div>
-                     <div className='content-title'>Look and feel great at any age!</div>
-                     <div className='content-text-down'>We teach you a combination of proven natural<br/> rejuvenation techniques in online classes<br/>
-                        (face, body, mind and soul), in a beautiful<br/> 
-                        community of like-minded women.
+                     <div className='content-text-up'>Чувствуйте себя как дома и станьте новой версией Себя буквально за недели</div>
+                     <div className='content-title'>Выгляди и чувствуй себя прекрасно в любом возрасте</div>
+                     <div className='content-text-down'>Мы научим Вас комибанции натуральных<br/> технологий омоложения на онлайн занятиях<br/>
+                        (лицо, тело, мысли и душа), в красивом<br/> 
+                        обществе женщин единомышленниц.
                      </div>
                      <button 
                         className='try-us'

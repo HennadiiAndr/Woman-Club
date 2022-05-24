@@ -1,5 +1,5 @@
 import React from 'react'
-import Flowers from '../flowers.png'
+import Flowers from '../assets/flowers.png'
 import { useDispatch } from 'react-redux'
 import { connect } from 'react-redux'
 import { SET_RANGE } from '../actions/action_types'

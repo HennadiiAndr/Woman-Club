@@ -1,9 +1,9 @@
 import React from 'react'
-import More1 from '../more1.png'
-import More2 from '../more2.png'
-import More3 from '../more3.png'
-import More4 from '../more4.png'
-import More5 from '../more5.png'
+import More1 from '../assets/more1.png'
+import More2 from '../assets/more2.png'
+import More3 from '../assets/more3.png'
+import More4 from '../assets/more4.png'
+import More5 from '../assets/more5.png'
 
 import '../styles.scss'
 

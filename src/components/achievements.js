@@ -1,10 +1,10 @@
 import React from "react";
-import Community from '../community.png'
-import Coaching from '../coaching.png'
-import File from '../file.png'
-import Key from '../key.png'
-import OnlineClass from '../onlineclass.png'
-import Lotus from '../lotus.png'
+import Community from '../assets/community.png'
+import Coaching from '../assets/coaching.png'
+import File from '../assets/file.png'
+import Key from '../assets/key.png'
+import OnlineClass from '../assets/onlineclass.png'
+import Lotus from '../assets/lotus.png'
 
 import '../styles.scss'
 

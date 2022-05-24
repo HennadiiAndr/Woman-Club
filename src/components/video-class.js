@@ -28,20 +28,10 @@ function VideoClass(){
    const onClickHandler = () =>{
       window.scroll(0,4600)
    }
-   /*const emailValidation = (email) =>{
-      const regEx= /[a-zA-Z0-9._%+-]+@[a-z0-9·-]+\.[a-z]{2,8}(.[a-z{2,8}])?/g
-      if(regEx.test(email)){
-         setMessage('we sent you all materials')
-      }else if(!regEx.test(email)&& email !==''){
-         setMessage('enter valid email')
-      }else{
-         setMessage('enter email')
-      }
-   }*/
    return(
       <div className='video-class-container'>
          <div className='video-class-block'>
-            <div className='video-class-title'>Free Facial Massage video class</div>
+            <div className='video-class-title'>Бесплатный видео урок массажа лица</div>
             <div className='email-input-container'>
                <input 
                   className='email-input' 
@@ -52,7 +42,7 @@ function VideoClass(){
                <button 
                   className='get-free'
                   onClick={onClickHandler}
-               >Get FREE access</button>
+               >Бесплатный доступ</button>
                <div className='blue-block-up'></div>
                <div className='blue-block-down'></div>
             </div>
