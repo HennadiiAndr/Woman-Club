@@ -12,43 +12,43 @@ function Achievements(){
    return(
       <div className='achievemens-block'>
          <div className='achievements'>
-            <div className='achievements-title'>What will you get in the club?</div>
+            <div className='achievements-title'>Что ты получишь в клубе?</div>
             <div className='achievements-container'>
                <div className="benefit">
                   <img src={Lotus} alt='img'></img>
-                  <div className="badge">part 1</div>
-                  <div className="benefit-title">A complete program</div>
-                  <div className="benefit-text">The New You club has everything you need.<br/> Face, body, posture, yoga, workouts, meditation,<br/> personal development, self confidence<br/> boosting,...</div>
+                  <div className="badge">часть 1</div>
+                  <div className="benefit-title">Полная программа</div>
+                  <div className="benefit-text">Клуб Новая Ты это все что тебе нужно<br/> Лицо, тело, осанка, йога, тренировки, медитация,<br/> личностный рост, уверенность в себе<br/> повышение,...</div>
                </div>
                <div className="benefit">
                   <img src={OnlineClass} alt='img'></img>
-                  <div className="badge">part 2</div>
-                  <div className="benefit-title">Daily classes (recorded)</div>
-                  <div className="benefit-text">We have new classes every day of the week<br/> which you can follow live or watch at a later<br/> moment.</div>
+                  <div className="badge">часть 2</div>
+                  <div className="benefit-title">Ежедневные занятия (записанные)</div>
+                  <div className="benefit-text">у нас новые занятия каждую неделю <br/> которые Вы можете смотреть на стриме или позже<br/> момент.</div>
                </div>
                <div className="benefit">
                   <img src={Key} alt='img'></img>
-                  <div className="badge">part 3</div>
-                  <div className="benefit-title">Access to several (mini)-courses</div>
-                  <div className="benefit-text">-You will get access to several courses (see<br/> below) with new courses being added every<br/> month.</div>
+                  <div className="badge">часть 3</div>
+                  <div className="benefit-title">Доступ к нескольким (мини)-курсам</div>
+                  <div className="benefit-text">-Вы получите доступ к нескольким курсам (см.<br/> ниже) с новыми курсами которые добавляются каждый<br/> месяц.</div>
                </div>
                <div className="benefit">
                   <img src={Coaching} alt='img'></img>
-                  <div className="badge">part 4</div>
-                  <div className="benefit-title">Professional trainers</div>
-                  <div className="benefit-text">-We only work with highly trained and certified<br/> coaches, approved by experts in the field and<br/> regularly have external expert speakers in the<br/> club (nutritionist, cosmetologist, psychologist,<br/> energy practitioner, etc.</div>
+                  <div className="badge">часть 4</div>
+                  <div className="benefit-title">Профессиональные тренеры</div>
+                  <div className="benefit-text">-Мы работаем только с высокотренированными и сертифицированными<br/> тренерами, одобренными экспертами и<br/> у нас регулярно выступают привлеченные эксперты <br/>в клубе (нутрициолог, косметолог, психолог,<br/> энергетический практик, и т.д.</div>
                </div>
                <div className="benefit">
                   <img src={File} alt='img'></img>
-                  <div className="badge">part 5</div>
-                  <div className="benefit-title">Archive of previous classes</div>
-                  <div className="benefit-text">You will get access to all previous classes and<br/> courses for as long as<br/> you stay a member.</div>
+                  <div className="badge">часть 5</div>
+                  <div className="benefit-title">Архив предыдущих занятий</div>
+                  <div className="benefit-text">Ты получишь доступ к предыдущим занятиям<br/> столько сколько ты<br/> остаешься в клубе.</div>
                </div>
                <div className="benefit">
                   <img src={Community} alt='img'></img>
-                  <div className="badge">part 6</div>
-                  <div className="benefit-title">Community</div>
-                  <div className="benefit-text">-In the members area of the club there is also a<br/> forum where you can chat with like-minded club<br/> members on different topics, motivate each<br/> other, ask questions, arrange offline meetings,<br/> schedule video calls on different topics, share<br/> results and insights, network,...</div>
+                  <div className="badge">часть 6</div>
+                  <div className="benefit-title">Сообщество</div>
+                  <div className="benefit-text">-В личном кабинете есть также <br/> форум где вы можете общаться с единомышленниками <br/> на разные темы, мотивировать друг<br/> друга, задавать вопросы, организовывать оффлайн встречи,<br/> назначать видео звонки на разные темы, делиться<br/> результатами и инсайтами, сеть,...</div>
                </div>
             </div>
          </div>

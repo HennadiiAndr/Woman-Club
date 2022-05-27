@@ -15,12 +15,12 @@ function MoreAbout(){
             <div className='more-about-content'>
                <div className='more-about-wrapper'>
                   <div className='about-text-container'>
-                     <div className='about-title'>More about Nelli</div>
-                     <div className='about-text'>University Diploma of the Department of Physical<br/> Therapy.<br/>
-                        Since 2002 she worked as a teacher of physical<br/> culture and sports at the university.<br/>
-                        At the University I created a team of sports aerobics<br/> and brought it to the regional prizewinners.<br/>
-                        Learned yoga and its philosophy from a variety of<br/> teachers in India, Sri Lanka and Bali.<br/>
-                        Passed 150 hours of theory and practice of Ayurveda<br/> and Ashtanga yoga</div>
+                     <div className='about-title'>Больше о Нелли</div>
+                     <div className='about-text'>Университетский диплом кафедры физической<br/> Терапии.<br/>
+                        С 2002 года работала учителем физической<br/> культуры и спорта в университете.<br/>
+                        В университете я создала команду по спортивной аэробике<br/> и сделал ее региональным призером.<br/>
+                        Изучил йогу и ее философию у нескольких<br/> учителей в Индии, Шри Ланки и Бали.<br/>
+                        Пройдено 150 часов теории и практики Аюрведы<br/> и Ашанта йоги</div>
                   </div>
                   <img src={More2} alt='img'></img>
                </div>

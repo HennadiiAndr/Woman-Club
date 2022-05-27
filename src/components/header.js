@@ -34,7 +34,7 @@ function Header(){
                      <button 
                         className='try-us'
                         onClick={onClickHandler}
-                     >Try us free for 7 days</button>
+                     >Бесплатный доступ 7 дней</button>
                   </div>
                </div>
                <div className='image-block'>

@@ -31,37 +31,37 @@ function Results(props){
          <div className='results'>
             <div className='results-title-block'>
                <div className='results-title'>
-                  For who is this and what<br/> 
-                  results can you expect?
+                  Для кого это и каких результатов<br/> 
+                  ты можешь ожидать?
                </div>
                <div className='age-select-block'>
                   <div 
                      className={'age-select' + (range === '20-25' ? ' selected' : '')}
-                     onClick={() => {setRange('20-25')}}>Are you 20-25 years old?
+                     onClick={() => {setRange('20-25')}}>Тебе 20-25 лет?
                   </div>
                   <div 
                      className={'age-select' + (range === '26-35' ? ' selected' : '')}
-                     onClick={() => {setRange('26-35')}}>Are you 26-35 years old?
+                     onClick={() => {setRange('26-35')}}>Тебе 26-35 лет?
                   </div>
                   <div 
                      className={'age-select' + (range === '36-45' ? ' selected' : '')}
-                     onClick={() => {setRange('36-45')}}>Are you 36-45 years old?
+                     onClick={() => {setRange('36-45')}}>Тебе 36-45 лет?
                   </div>
                   <div 
                      className={'age-select' + (range === '46-55' ? ' selected' : '')}
-                     onClick={() => {setRange('46-55')}}>Are you 46-55 years old?
+                     onClick={() => {setRange('46-55')}}>Тебе 46-55 лет?
                   </div>
                   <div 
                      className={'age-select' + (range === 'over 55' ? ' selected' : '')} 
-                     onClick={() => {setRange('over 55')}}>Are you over 55?
+                     onClick={() => {setRange('over 55')}}>Тебе больше 55?
                   </div>
                </div>
             </div>
             <div className='motivation-block'>
                <div className='motivation-picture-block'>
                   <div className='content-block'>
-                     <div className='motivation-text'>The heyday of life, experience and beauty!<br/><br/>
-                        Time to consciously enjoy your life and<br/> yourself! Recall your dreams and return<br/> yourself to the best version!
+                     <div className='motivation-text'>Расцвет жизни, опыт и красота!<br/><br/>
+                        Время сознательно наслаждаться своей жизнью и собой!<br/> Вспомни свои мечты и верни<br/> себя к лучшей версии!
                      </div>
                   </div>
                   <img src={Flowers} alt='img' className='motivation-picture'></img>
@@ -69,24 +69,24 @@ function Results(props){
                <div className='down-text-container'>
                   <div className='down-text'>
                      <div className='down-title'>
-                        Risk factors for the face:
+                        Факторы риска для лица:
                      </div>
-                     <div className='text'>A long-term habit of frowning, squinting, clenching the jaws<br/> and lips, pushing the neck forward, stooping - is already more clearly<br/> manifested by the rings of venus, nasolabial folds, interbrow, jowls.<br/>
-                        The accumulated stress changes the nature of breathing, which<br/> causes tension in the shoulders and diaphragm, and therefore<br/> provokes persistent swelling in the neck and face.<br/>
-                        Age is betrayed by posture, gait, fuzzy jaw line, raised shoulders,<br/> way of thinking.
+                     <div className='text'>Многолетняя привычка хмуриться, щуриться, сжимать челюсти<br/> а губы, выдвигая шею вперед, сутулясь - уже четче<br/> проявляется кольцами Венеры, носогубными складками, межбровьем, бровями.<br/>
+                        Накопившийся стресс меняет характер дыхания, что<br/> приводит к напряжению в плечах и диафрагме, и из-за это<br/> провоцирует постоянные отеки на шее и лице.<br/>
+                        Возраст выдает осан, походка, нечеткая линия челюсти, приподнятые плечи,<br/> способ мышления.
                      </div>
                   </div>
                   <div className='down-text'>
                      <div className='down-title'>
-                        The club will help you:
+                        Клуб поможет тебе:
                      </div>
-                     <div className='text'>Return an open look, clear facial lines, high cheekbones, well<br/>-groomed appearance.<br/>
-                        Learn the nature of facial deformity and practice its restoration.<br/>
-                        Return the nature of breathing, relieve morning swelling.<br/>
-                        Work with facial expressions, emotions, internal state.<br/>
-                        Relieve accumulated stress and tension.<br/>
-                        Return the posture, gait and state of the queen.<br/>
-                        It's time to conquer the world!
+                     <div className='text'>Вернуть открытый взгляд, четкие линии лица, высокие скулы, ухоженный<br/>внешний вид.<br/>
+                        Узнайте природу деформации лица и попрактикуйтесь в ее восстановлении.<br/>
+                        Вернуть характер дыхания, снять утреннюю отечность.<br/>
+                        Работа с мимикой, эмоциями, внутренним состоянием.<br/>
+                        Снять накопившийся стресс и напряжение.<br/>
+                        Вернуть осанку, походку и состояние королевы.<br/>
+                        Пришло время покорить мир!
                      </div>
                   </div>
                </div>

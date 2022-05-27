@@ -81,30 +81,30 @@ function WhatWeDo(){
                         4D установки<br/>
                         Работа с установками
                      </div>
-                     <div className='text-block'>Inclusion of the observer<br/>
-                        Settings for the new you<br/>
-                        Practicing elevated emotions<br/>
-                        Working with emotions<br/>
-                        Quantum rejuvenation
+                     <div className='text-block'>Включение наблюдателя<br/>
+                        Установки для новой тебя<br/>
+                        Практика приподнятых эмоций<br/>
+                        Работа с эмоциями<br/>
+                        Квантовое омоложение
                      </div>
                   </div>
                </div>
             </div>
             <div className='rejuvenation-block'>
                <div className='rejuvenation-content'>
-                  <div className='what-we-do'>What We Do</div>
-                  <div className='rejuvenation-title'>Personal Development</div>
+                  <div className='what-we-do'>Что Мы Делаем</div>
+                  <div className='rejuvenation-title'>Личностное развитие</div>
                   <div className='divider'></div>
                   <div className='rejuvenation-text-block'>
-                     <div className='text-block'>Mindset training<br/>
-                        Good Day<br/>
-                        Essays with experts on current topics<br/>
-                        Educational broadcasts in the field of<br/>
-                         health, youth, beauty, spiritual growth
+                     <div className='text-block'>Тренировка мышления<br/>
+                        Хороший день<br/>
+                        Эссе экспертнов на соответствующие темы<br/>
+                        обучающие трансляции в сфере<br/>
+                         здоровья, молодости, красоты, духовного роста
                      </div>
-                     <div className='text-block'>Nutrition and detox tips<br/>
-                        Develop good habits<br/>
-                        Planning for success
+                     <div className='text-block'>Советы по диетологии и детоксу<br/>
+                        Развитие хороших привычек<br/>
+                        Планирование успеха
                      </div>
                   </div>
                </div>
